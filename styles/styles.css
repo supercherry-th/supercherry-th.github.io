@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kaushan+Script&display=swap');
+
+body {
+    background-color: #212a32;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar-nav .nav-item {
+    margin-right: 30px; 
+}
+
+#logo{
+    height: 30px;
+}
+.container {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #343a40; /* Dark container */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 500px; /* Set max-width for the form */
+}
+
+h2 {
+    color: #675700; /* Gold color for headings */
+    text-align: center;
+}
+
+.form-label {
+    color: #675700; /* Gold color for labels */
+}
+
+.btn-gold {
+    background-color: #675700; /* Gold button color */
+    border: none;
+    color: #212529; /* Dark text for contrast */
+}
+
+.btn-gold:hover {
+    background-color: #e0c15c; /* Slightly darker gold on hover */
+}
+
+input, select {
+    background-color: #495057; /* Dark input fields */
+    border: 1px solid #ced4da; /* Light border */
+    color: #f8f9fa;
+}
+
+input::placeholder {
+    color: #adb5bd; /* Light placeholder text */
+}
+
+.spinner-border {
+    color: #212529; /* Dark color for spinner */
+}
+
+/* Additional styles for responsive design */
+@media (max-width: 576px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-us {
+    background-image: url('https://images.pexels.com/photos/28303226/pexels-photo-28303226/free-photo-of-wizarding-world-of-harry-potter-universal-studios.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 250px 150px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, ); 
+}
+
+.about-us h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    
+}
+
+.about-us p {
+    font-size: 1.5rem;
+}
+
+.mission-image img {
+    width: 90%;
+    height: auto;
+}
+
+.mission-text, .story-text, .values-text {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.mission-text h3, .story-text h3, .values-text h3 {
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.meet-the-team {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.meet-the-team h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.carousel-inner {
+    padding: 20px; 
+}
+
+.carousel-item-head-img {
+    height: 200px; 
+    width: 200px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 10px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; 
+}
+.carousel-item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+.carousel-control-prev, .carousel-control-next {
+    top: 50%; 
+    transform: translateY(-50%); 
+    background-color: rgba(10, 9, 9, 0.5); 
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: #343a40; 
+}
+
+
+.thank-you {
+    background-color: #0d6efd;
+    color: white;
+    padding: 60px 0;
+    background-image: url('https://images.pexels.com/photos/3767825/pexels-photo-3767825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.thank-you h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.thank-you p {
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #675700, 0 0 30px #675700, 0 0 45px #675700; 
+    z-index: 0;
+}
+
+.card-body {
+    position: relative;
+    z-index: 1; 
+}
+
+.registration-container {
+    margin-top: 100px;
+}
+
+.form-control {
+    background-color: #f9f7f3; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 5px #675700; 
+    margin-top: 10px;
+}
+
+.form-control:focus {
+    border-color: #675700;
+    box-shadow: 0 0 10px #e1d4ac; 
+}
+
+.btn-primary {
+    margin-top: 20px;
+    background-color: #343a40; 
+    border-color: #56595c; 
+}
+
+.btn-primary:hover {
+    background-color: #56595c; 
+    border-color: #56595c; 
+    box-shadow: 0 0 10px #675700; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#top-div {
+    background: url('https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&w=2520&h=1500&dpr=1');
+    background-size: cover;
+    color: white;
+    padding: 150px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+h1.display-4 {
+    font-weight: bold;
+    letter-spacing: 2px; 
+    z-index: 2;
+}
+
+p.lead {
+    font-size: 1.55rem;
+    font-weight: 300; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+.btn-primary {
+    background-color: #343a40; 
+    border-color: #343a40; 
+}
+
+.btn-primary:hover {
+    background-color: #68727d; 
+    border-color: #FDBD01;
+    box-shadow: 0 0 10px #FDBD01; 
+}
+
+.landing-img {
+    height: 700px; 
+    object-fit: cover; 
+}
+
+#mySlider {
+    height: 700px;
+}
+
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+footer {
+    background-color: #343a40;
+    padding: 20px 0;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); 
+}
+
+
+
+
