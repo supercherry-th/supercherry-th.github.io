@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Employee Registration - Hogwarts Imaginarium</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gijgo@1.9.13/css/gijgo.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body
+    style="background: url('https://images.pexels.com/photos/28908202/pexels-photo-28908202/free-photo-of-magical-platform-9-3-4-at-king-s-cross.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center center fixed; background-size: cover;">
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <img id="logo" src="pictures/golden.png">
+            <a href="#" class="navbar-brand">Hogwarts Treasures</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar1" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="landing.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about-us.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="landing.html#gallery" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registration.html" class="nav-link">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row justify-content-center align-items-center min-vh-100 registration-container">
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <div class="card-body text-center form-group position-relative">
+                    <h2 class="text-center">Hogwarts Employee <br> Registration Form</h2>
+                    <p class="text-center">Welcome to the world of magic! Please fill in the details below to join our
+                        enchanting
+                        team.</p>
+                    <form action="submit_registration.php" method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="datepicker" class="form-label">Date of Birth</label>
+                            <input type="text" class="form-control" id="datepicker" name="dob" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="position" class="form-label">Position</label>
+                            <input type="text" class="form-control" id="position" name="position" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="house" class="form-label">House</label>
+                            <select class="form-select" id="house" name="house" required>
+                                <option value="">Select your House...</option>
+                                <option value="Gryffindor">Gryffindor</option>
+                                <option value="Hufflepuff">Hufflepuff</option>
+                                <option value="Ravenclaw">Ravenclaw</option>
+                                <option value="Slytherin">Slytherin</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="photo" class="form-label">Profile Photo</label>
+                            <input type="file" class="form-control" id="photo" name="photo" accept="image/*">
+                        </div>
+                        <button type="submit" class="btn btn-gold" id="submit-button">
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" id="spinner"
+                                style="display: none;"></span>
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.13/js/gijgo.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#datepicker').datepicker({
+                uiLibrary: 'bootstrap5',
+                format: 'dd-mm-yyyy'
+            });
+
+            $('#submit-button').click(function () {
+                // Show the spinner
+                $('#spinner').show();
+                // Disable the button to prevent multiple clicks
+                $(this).prop('disabled', true);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hogwarts Treasures</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css"> 
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <img id="logo" src="pictures/golden.png">
+            <a href="#" class="navbar-brand">Hogwarts Treasures</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar1" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about-us.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="landing.html#gallery" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registration.html" class="nav-link">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="top-div" class="text-center">
+        <h1 class="display-4">Welcome to Hogwarts Treasures!</h1>
+        <p class="lead">Dive into a world of magic where every corner holds a new wonder. Explore our curated collection of magical artifacts!</p>
+        <a href="#gallery" class="btn btn-primary btn-lg">Discover the Magic</a>
+    </section>
+
+    <!-- Slider -->
+    <section id="slider" class="mt-0">
+        <div id="mySlider" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#mySlider" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#mySlider" data-bs-slide-to="1"></li>
+                <li data-bs-target="#mySlider" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner-landing">
+                <div class="carousel-item carousel-image-1 active">
+                    <img src="https://images.pexels.com/photos/7978247/pexels-photo-7978247.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block landing-img w-100 hero-img" alt="Wands">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Wands of Wonder</h5>
+                        <p>Unleash your potential with our exquisite wands, crafted for every wizard and witch.</p>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-2">
+                    <img src="https://images.pexels.com/photos/7978252/pexels-photo-7978252.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block landing-img w-100" alt="Potions">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Potions & Brews</h5>
+                        <p>Craft your own magical concoctions with our rare ingredients and potions!</p>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-3">
+                    <img src="https://images.pexels.com/photos/7978846/pexels-photo-7978846.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block landing-img w-100" alt="Apparel">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mystical Apparel</h5>
+                        <p>Adorn yourself with robes and accessories that will turn heads in any magical gathering.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#mySlider" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#mySlider" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="my-4">
+        <h2 class="text-center mb-4">Explore Our Collection</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/7978779/pexels-photo-7978779.jpeg?auto=compress&cs=tinysrgb&w=800" class="card-img-top" alt="Wand of Elemental Power">
+                    <div class="card-body">
+                        <h5 class="card-title">Wand of Elemental Power</h5>
+                        <p class="card-text">Unlock the elements with this handcrafted wand. Each wand is infused with the essence of fire, water, earth, or air, making it perfect for aspiring witches and wizards.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/7979076/pexels-photo-7979076.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" class="card-img-top" alt="Potion Brewing Kit">
+                    <div class="card-body">
+                        <h5 class="card-title">Potion Brewing Kit</h5>
+                        <p class="card-text">Become a master potioneer with this complete kit! Includes ingredients and instructions for brewing classic potions like Felix Felicis and Polyjuice Potion (non-toxic, of course!).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/7979104/pexels-photo-7979104.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" class="card-img-top" alt="Enchanted Quill">
+                    <div class="card-body">
+                        <h5 class="card-title">Enchanted Quill</h5>
+                        <p class="card-text">Write your spells with style! This feather quill is enchanted to never run out of ink, making it perfect for jotting down notes in your spellbook.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/5709945/pexels-photo-5709945.jpeg?auto=compress&cs=tinysrgb&w=800" class="card-img-top" alt="Magical Creatures Plushies">
+                    <div class="card-body">
+                        <h5 class="card-title">Magical Creatures Plushies</h5>
+                        <p class="card-text">Snuggle up with adorable plushies of magical creatures like a Hippogriff, Niffler, or Thestral. Each plushie comes with a care guide and backstory!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/7979085/pexels-photo-7979085.jpeg?auto=compress&cs=tinysrgb&w=800" class="card-img-top" alt="Invisibility Cloak">
+                    <div class="card-body">
+                        <h5 class="card-title">Invisibility Cloak</h5>
+                        <p class="card-text">Slip into this finely woven cloak that grants the wearer a sense of discretion and adventure. Perfect for sneaking around the castle!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/7179804/pexels-photo-7179804.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" class="card-img-top" alt="Crystal Ball of Divination">
+                    <div class="card-body">
+                        <h5 class="card-title">Crystal Ball of Divination</h5>
+                        <p class="card-text">Peer into the future with this beautifully crafted crystal ball. Comes with a guide to help you interpret what you see!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/18180778/pexels-photo-18180778/free-photo-of-large-selection-of-various-confectionery-in-plastic-boxes.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" class="card-img-top" alt="Muggle Snacks from the Wizarding World">
+                    <div class="card-body">
+                        <h5 class="card-title">Muggle Snacks from the Wizarding World</h5>
+                        <p class="card-text">Indulge in delicious treats like Chocolate Frogs, Bertie Bott's Every Flavor Beans, and Pumpkin Pasties. A perfect way to satisfy your magical cravings!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/14654929/pexels-photo-14654929.jpeg?auto=compress&cs=tinysrgb&w=800" class="card-img-top" alt="House Pride Scarves">
+                    <div class="card-body">
+                        <h5 class="card-title">House Pride Scarves</h5>
+                        <p class="card-text">Show your allegiance to your favorite Hogwarts house with these cozy, stylish scarves. Available in Gryffindor, Slytherin, Hufflepuff, and Ravenclaw colors!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/20067918/pexels-photo-20067918/free-photo-of-eyeglasses-on-paper-maps.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="Magical Map of Hogwarts">
+                    <div class="card-body">
+                        <h5 class="card-title">Magical Map of Hogwarts</h5>
+                        <p class="card-text">Explore every corner of the castle with this detailed, hand-drawn map. Perfect for navigating the grounds or planning your next adventure!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/7978846/pexels-photo-7978846.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" class="card-img-top" alt="Muggle Snacks from the Wizarding World">
+                    <div class="card-body">
+                        <h5 class="card-title">Time-Turner Necklace</h5>
+                        <p class="card-text">Wear this exquisite replica of the Time-Turner to remind you that time is a precious resource. A perfect accessory for the time-conscious wizard!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/5635132/pexels-photo-5635132.jpeg?auto=compress&cs=tinysrgb&w=800" class="card-img-top" alt="House Pride Scarves">
+                    <div class="card-body">
+                        <h5 class="card-title">Broomstick Model Kit</h5>
+                        <p class="card-text">Assemble your own miniature broomstick with this fun DIY kit. Once completed, it makes a fantastic display piece for any magical enthusiast!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/7978811/pexels-photo-7978811.jpeg?auto=compress&cs=tinysrgb&w=800" class="card-img-top" alt="Magical Map of Hogwarts">
+                    <div class="card-body">
+                        <h5 class="card-title">Herbology Starter Set</h5>
+                        <p class="card-text">Grow your own magical plants with this starter kit, including seeds for Mandrakes, Puffskein Plants, and more. Complete with pots and care instructions!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Hogwarts Treasures. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
